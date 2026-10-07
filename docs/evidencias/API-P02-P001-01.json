@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P001"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Gt6C5VSzq2URLpfKsE67dAgUK%2B%2FuE4CJof0%2FUYFNalK4mRGFmAmVDmgmJOgu6n28pAldljoNcrx6kjtv%2FHge4n1tLGldqcBoVleWPZxGpiYwSln9bdQiRT%2FB7ANPcPzrJn8V98douPGsaNT4isR0n0lLWdtOnhCwJrWL3JKmosXpL4XHPsZ07tf0fVk%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf18e7fe020-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P001",
+      "nome": "Camiseta Essencial",
+      "descricao": "Algodão penteado e corte reto.",
+      "categoria": "Vestuário",
+      "preco": 59.9
+    }
+  }
+}

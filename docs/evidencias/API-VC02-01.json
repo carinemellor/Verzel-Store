@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": []
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:58 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "95",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=64EvF9LcKuA1YUzQc%2Fmzy6Ite%2BKbw54tlOdBi1M6dEqnqDDoIqb%2BG3yNOMKfIgb1LErN9elmV9lctWv4gmdv4P3k6mQOjlXyYsHPc4pEGddFQ%2BWc9gMkeAQMQ3EeNQZQ%2B0oLga1ofeAcFIgGnGpH6kxTOLhw9z5ZUE29LtjHbaMf3is7ph1riNPLciM%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf9cf3af1f5-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "ITENS_OBRIGATORIOS",
+        "mensagem": "Informe ao menos um item.",
+        "campo": "itens"
+      }
+    }
+  }
+}

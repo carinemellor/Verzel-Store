@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": {
+      "cliente": {
+        "nome": "Maria",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:56 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "162",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0CWjzwMSM7ppVbKdFwnUAfXVIOj2lScrpTqeuYPuoSCLYPZNbsWRa4xIjP9q1gInw071%2FTPyDi9nyNJL1bM5CW11ce4wpIyj%2BCoOKZOS9JpN5V34cjzCtEn8RVyV1D07rUoo6yh5S117BMUxtxW9DqQfgpv%2F%2FoMjHoZ%2B29satuRadW%2Brxt9Im0Xs9Ok%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cee9c726228-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "DADOS_INVALIDOS",
+        "mensagem": "Existem campos inválidos no pedido.",
+        "campos": [
+          {
+            "campo": "cliente.nome",
+            "mensagem": "Informe nome e sobrenome."
+          }
+        ]
+      }
+    }
+  }
+}

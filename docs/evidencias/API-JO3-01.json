@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": "[]"
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:20:01 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "105",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JBV4DarzGTsuVT%2FAtsmaQJWo0MYFjUTOj8dV%2FP1dKIKU%2Fwls9xByfXT%2B2AEUXHs0dbLuGpU%2F8%2FxoHh3lR%2FOAVWM2xvaWeVNtuFIwUkHQ7iuerIiwkrS6r0LSqDfGFIYyWecwgBE5eeGKRhc1WNg02%2FAJvO%2BwRhGANvgvSskU4kOT5NupWdNT0MVrSjI%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680d106c5b11fe-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "JSON_INVALIDO",
+        "mensagem": "O corpo da requisição deve ser um objeto JSON válido."
+      }
+    }
+  }
+}

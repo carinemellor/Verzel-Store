@@ -1,0 +1,612 @@
+{
+  "inicio": "2026-10-06T22:19:52.407Z",
+  "fuso": "America/Sao_Paulo",
+  "status": "failed",
+  "duracaoMs": 235462.319,
+  "node": "v24.21.0",
+  "baseURL": "https://verzel-store.qa-test-verzel-store.workers.dev",
+  "resultados": [
+    {
+      "projeto": "api",
+      "cenario": "API-C01 CA07 abaixo do limite sem cupom @smoke",
+      "resultado": "passed",
+      "duracaoMs": 127,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C02 CA01 CA09 desconto somente nos produtos @smoke",
+      "resultado": "passed",
+      "duracaoMs": 108,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C03 CA06 abaixo do limite (199,80)",
+      "resultado": "passed",
+      "duracaoMs": 108,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C04 CA06 exatamente no limite sem cupom",
+      "resultado": "failed",
+      "duracaoMs": 128,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C05 CA06 CA08 exatamente no limite com cupom",
+      "resultado": "failed",
+      "duracaoMs": 140,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C06 CA06 acima do limite (209,50)",
+      "resultado": "passed",
+      "duracaoMs": 120,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C07 CA08 subtotal acima do limite e valor com desconto abaixo dele",
+      "resultado": "passed",
+      "duracaoMs": 100,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C08 CA06 subtotal acima do limite @smoke",
+      "resultado": "passed",
+      "duracaoMs": 102,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C09 CA01 CA11 exemplo documentado com múltiplos produtos",
+      "resultado": "passed",
+      "duracaoMs": 104,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C10 CA10 aceita exatamente cinco unidades",
+      "resultado": "passed",
+      "duracaoMs": 102,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C11 CA11 precisão decimal de subtotal, desconto e total",
+      "resultado": "passed",
+      "duracaoMs": 99,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C12-1 CA02 normaliza \"bemvindo10\"",
+      "resultado": "passed",
+      "duracaoMs": 100,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C12-2 CA02 normaliza \"BeMvInDo10\"",
+      "resultado": "passed",
+      "duracaoMs": 97,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C12-3 CA02 normaliza \"  BEMVINDO10  \"",
+      "resultado": "passed",
+      "duracaoMs": 114,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C12-4 CA02 normaliza \"  bemvindo10  \"",
+      "resultado": "passed",
+      "duracaoMs": 102,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C13 CA03 calcula sem desconto e informa Cupom inválido.",
+      "resultado": "passed",
+      "duracaoMs": 92,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C14 CA04 calcula sem desconto e informa Cupom expirado.",
+      "resultado": "passed",
+      "duracaoMs": 94,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-C15 cálculo não mantém o cupom entre requisições",
+      "resultado": "passed",
+      "duracaoMs": 125,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O01-1 @smoke confirma pedido e normaliza CEP 01310-100",
+      "resultado": "passed",
+      "duracaoMs": 107,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O01-2 @smoke confirma pedido e normaliza CEP 01310100",
+      "resultado": "passed",
+      "duracaoMs": 102,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O02 CA06 CA08 pedido preserva frete grátis com subtotal 200 e cupom",
+      "resultado": "failed",
+      "duracaoMs": 107,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O03 bloqueia pedido com NAOEXISTE",
+      "resultado": "passed",
+      "duracaoMs": 121,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O04 bloqueia pedido com VERAO2026",
+      "resultado": "passed",
+      "duracaoMs": 135,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O05-1 rejeita nome inválido com detalhes de campo",
+      "resultado": "passed",
+      "duracaoMs": 108,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O05-2 rejeita email inválido com detalhes de campo",
+      "resultado": "passed",
+      "duracaoMs": 117,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-O05-3 rejeita cep inválido com detalhes de campo",
+      "resultado": "passed",
+      "duracaoMs": 97,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P01 @smoke lista o catálogo fixo com tipos, preços e IDs únicos",
+      "resultado": "passed",
+      "duracaoMs": 104,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P001 consulta P001 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 107,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P002 consulta P002 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 94,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P003 consulta P003 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 102,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P004 consulta P004 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 97,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P005 consulta P005 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 97,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P006 consulta P006 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 103,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P007 consulta P007 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 103,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P02-P008 consulta P008 e valida seu contrato",
+      "resultado": "passed",
+      "duracaoMs": 107,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P03 produto inexistente responde 404",
+      "resultado": "passed",
+      "duracaoMs": 103,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P04 rota inexistente responde 404",
+      "resultado": "passed",
+      "duracaoMs": 98,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-P05 método não permitido responde 405",
+      "resultado": "passed",
+      "duracaoMs": 98,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC01 rejeita itens ausentes em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 105,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC02 rejeita itens vazios em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 88,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC03 rejeita item nulo em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 98,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC04 rejeita produto inexistente em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 101,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC05 rejeita produto duplicado em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 91,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC06 rejeita quantidade zero em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 105,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC07 rejeita quantidade negativa em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 94,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC08 rejeita quantidade fracionária em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 98,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC09 rejeita quantidade como texto em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 88,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VC10 rejeita CA10 seis unidades em /api/carrinho/calcular",
+      "resultado": "failed",
+      "duracaoMs": 95,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JC1 corpo JSON inválido { em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 119,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JC2 corpo JSON inválido null em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 106,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JC3 corpo JSON inválido [] em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 95,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JC4 corpo JSON inválido \"texto\" em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 108,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-MC método GET não permitido em /api/carrinho/calcular",
+      "resultado": "passed",
+      "duracaoMs": 95,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO01 rejeita itens ausentes em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 99,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO02 rejeita itens vazios em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 107,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO03 rejeita item nulo em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 109,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO04 rejeita produto inexistente em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 119,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO05 rejeita produto duplicado em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 101,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO06 rejeita quantidade zero em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 106,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO07 rejeita quantidade negativa em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 99,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO08 rejeita quantidade fracionária em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 110,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO09 rejeita quantidade como texto em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 106,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-VO10 rejeita CA10 seis unidades em /api/pedidos",
+      "resultado": "failed",
+      "duracaoMs": 114,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JO1 corpo JSON inválido { em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 121,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JO2 corpo JSON inválido null em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 116,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JO3 corpo JSON inválido [] em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 104,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-JO4 corpo JSON inválido \"texto\" em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 103,
+      "tentativa": 1
+    },
+    {
+      "projeto": "api",
+      "cenario": "API-MO método GET não permitido em /api/pedidos",
+      "resultado": "passed",
+      "duracaoMs": 100,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F01 @smoke CA07 cobra frete fixo e informa valor faltante",
+      "resultado": "passed",
+      "duracaoMs": 5364,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F02 CA06 oferece frete grátis exatamente em R$ 200,00",
+      "resultado": "failed",
+      "duracaoMs": 28491,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F03 CA08 mantém frete grátis ao aplicar cupom no subtotal 200",
+      "resultado": "failed",
+      "duracaoMs": 20681,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F04 CA08 recalcula frete e cupom ao aumentar a quantidade",
+      "resultado": "failed",
+      "duracaoMs": 20729,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F05 @smoke CA10 limita cinco unidades na vitrine e no carrinho",
+      "resultado": "passed",
+      "duracaoMs": 12847,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F06 remove o último produto e permite adicionar um novo item",
+      "resultado": "passed",
+      "duracaoMs": 14371,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F07 ambiente preserva a mesma aba e isola uma nova aba",
+      "resultado": "passed",
+      "duracaoMs": 11936,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-F08 esvazia o carrinho e remove o cupom aplicado",
+      "resultado": "passed",
+      "duracaoMs": 14260,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-O01 @smoke finaliza pedido com cupom e confere confirmação e carrinho vazio",
+      "resultado": "passed",
+      "duracaoMs": 17422,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-O02 valida nome, e-mail e CEP inválidos antes de confirmar pedido",
+      "resultado": "passed",
+      "duracaoMs": 12809,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-O03 redireciona checkout com carrinho vazio para o carrinho",
+      "resultado": "passed",
+      "duracaoMs": 2183,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C01 @smoke CA01 CA09 aplica 10% somente sobre os produtos",
+      "resultado": "passed",
+      "duracaoMs": 8275,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C02-1 CA02 normaliza \"bemvindo10\" na interface",
+      "resultado": "passed",
+      "duracaoMs": 8284,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C02-2 CA02 normaliza \"  BeMvInDo10  \" na interface",
+      "resultado": "passed",
+      "duracaoMs": 8270,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C03 CA03 exibe Cupom inválido. sem aplicar desconto",
+      "resultado": "passed",
+      "duracaoMs": 8286,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C04 CA04 exibe Cupom expirado. sem aplicar desconto",
+      "resultado": "passed",
+      "duracaoMs": 8273,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C05 CA05 remove o cupom antes de aplicar novamente",
+      "resultado": "passed",
+      "duracaoMs": 12813,
+      "tentativa": 1
+    },
+    {
+      "projeto": "chromium",
+      "cenario": "UI-C06 impede aplicação de cupom em branco",
+      "resultado": "passed",
+      "duracaoMs": 8223,
+      "tentativa": 1
+    }
+  ]
+}

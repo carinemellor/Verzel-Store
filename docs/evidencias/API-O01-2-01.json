@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "cupom": "BEMVINDO10"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:55 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "458",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gqFozGZLFvvixkkvUW1UYSROnaLoKY10DaXVTrntvziohcqyDFJDE024MNNT%2Bb6op%2B7xM5F2qaFJ6Q8nxYTIYL515Zps9Qq3jBC5kI3O2hyGooWiIxrc53URxDwXkuayS19qoKEXO%2F28lN%2FXEfBJ%2Boo4VR4EAfKh2dtz5V3FszxzuK5BF1H0zFXEbp8%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680ce96840f1f2-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "numero": "VZ-670667",
+      "criadoEm": "2026-10-06T22:19:55.757Z",
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 1,
+          "total": 100
+        }
+      ],
+      "subtotal": 100,
+      "desconto": 10,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 100,
+      "total": 109.9,
+      "cupom": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      }
+    }
+  }
+}

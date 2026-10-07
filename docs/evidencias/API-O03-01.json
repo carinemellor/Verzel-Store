@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "cupom": "NAOEXISTE"
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:56 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "82",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0poNK0gh5QUOgSIt%2BUkyA0i6Bdn11XUrUHW%2FmDm8JArnw7d2KbjetO%2BdFfmm0P6eXJNs%2FpBkLhspJONuEE80NsHiBJnQDEACfdUjI64TL0futt8uCJk%2FPbbLEoKo1n2ZcHibPM7v0W5pxjQ1VuBubzqKtzezdUd%2BmXLG92x0VK3TaghGFpyvw5d7m%2BE%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cecfaf0f245-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "CUPOM_INVALIDO",
+        "mensagem": "Cupom inválido.",
+        "campo": "cupom"
+      }
+    }
+  }
+}

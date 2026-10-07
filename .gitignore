@@ -1,0 +1,12 @@
+node_modules/
+playwright-report/
+test-results/
+verification-results/
+verification-report/
+blob-report/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store

@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "INEXISTENTE",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:58 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "123",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FLWRdmyhXx%2BJFXgixdPhrvN%2FBr42teJfclRvLtKNxVf3GcJ1gWween8IuuNPJsvdg4FBjuTaNfVZkRn92jrSNtkqJRawJh2hCTQrcF9COBIZxvsDOUjffhB2rDWF0H2orTpgfjpCy4ez0cOGDGuuH9Mqs3naiBUhbjsfx8ePT6sskLR4vUWzrSjEoOg%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cfb1e85b559-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "PRODUTO_NAO_ENCONTRADO",
+        "mensagem": "Produto INEXISTENTE não encontrado.",
+        "campo": "itens[0].produtoId"
+      }
+    }
+  }
+}

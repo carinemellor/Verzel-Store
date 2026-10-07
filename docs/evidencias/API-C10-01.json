@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "itens": [
+        {
+          "produtoId": "P006",
+          "quantidade": 5
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:54 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Fp5a7BZT7LbdLS1WB8vXucSHj31N8RsEKZ44MvfcaMLT6V%2BsN2u5Fs0hSE4tssDo%2Bg5SETa4Hx7aBs%2FHsYNSgAOLazMbia78aaTQ1WlTpT25BtBQdxbFzJqDrjOnZpIf9hjhGFH1LwYmM8k%2FrgPj0OQ0Ly8sUYjutghv6jwVrRyjyuyn1U%2BhwDlTujc%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680ce26ad9f231-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "itens": [
+        {
+          "produtoId": "P006",
+          "nome": "Kit 3 Pares de Meias",
+          "precoUnitario": 29.9,
+          "quantidade": 5,
+          "total": 149.5
+        }
+      ],
+      "subtotal": 149.5,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 50.5,
+      "total": 169.4,
+      "cupom": null
+    }
+  }
+}

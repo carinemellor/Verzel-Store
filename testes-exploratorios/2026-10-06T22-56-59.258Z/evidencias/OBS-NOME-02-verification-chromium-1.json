@@ -1,0 +1,9 @@
+{
+  "entrada": {
+    "nome": "Maria Silva123",
+    "email": "maria@example.com",
+    "cep": "01310-100"
+  },
+  "aceitou": true,
+  "paginaFinal": "https://verzel-store.qa-test-verzel-store.workers.dev/pedido-confirmado"
+}

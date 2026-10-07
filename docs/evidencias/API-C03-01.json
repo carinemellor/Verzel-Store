@@ -1,0 +1,61 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "itens": [
+        {
+          "produtoId": "P001",
+          "quantidade": 1
+        },
+        {
+          "produtoId": "P002",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:53 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Te8RvCepl2xsPBbmAGzrH9gKousxbtRFq4GhuKzKvjE9HLYiaElnCYFxUONgmnE6MVVc7k71fyc5e3QNKYyblFrOXEJXtGjrUCI%2BgWKYI3HGpKqAt835bsZmWH87g7lZg1TSbgmtH2GXUaikL3FwZbXdAJ0NBJ4UTzkqy3j2aFsn46hXgbo%2BMFlZujM%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cd8b80a7e26-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "itens": [
+        {
+          "produtoId": "P001",
+          "nome": "Camiseta Essencial",
+          "precoUnitario": 59.9,
+          "quantidade": 1,
+          "total": 59.9
+        },
+        {
+          "produtoId": "P002",
+          "nome": "Calça Jeans Slim",
+          "precoUnitario": 139.9,
+          "quantidade": 1,
+          "total": 139.9
+        }
+      ],
+      "subtotal": 199.8,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 0.2,
+      "total": 219.7,
+      "cupom": null
+    }
+  }
+}

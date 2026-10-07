@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P007"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KPtlclViQ%2FizKk7QLdRU27xjFebgjFyLtljxyJhgFFPUD8X33f1c7FkDqdHwcSw0ID4%2Fiiiw7wXWcau2%2BS5YvKxZ3jWcYhnd16nAm%2FwJt28rCF2q7BpI%2FvNWn6HOKnB70Lhi%2F4CGyc49L9LyhMJfiW2%2BQJNKUmVS4HzoZL9dkEZGfX89jullbWa4i%2B8%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf5ad6fa519-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P007",
+      "nome": "Jaqueta Corta-Vento",
+      "descricao": "Tecido leve e repelente à água.",
+      "categoria": "Vestuário",
+      "preco": 229.9
+    }
+  }
+}

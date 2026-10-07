@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P008"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DCQyDwKyN%2B5yqHDLj1CAeP%2Bys0QbjZdVbERiDqt44A6L%2BIAbceu2YSHaxSFHxvOIKl%2BRwMwX8AHVs0x3nIiM00P5SrHe%2BYYcPhejeX4uUQZl1VyVYosdbgrQCwUARy0sI%2FMSs4mjTH4uRjNd4oEfOSUz%2BR5sgrjjn4z7YBL1lA%2F0KL7YnaJcy3AQrCc%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf66e648039-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P008",
+      "nome": "Garrafa Térmica 750ml",
+      "descricao": "Mantém a temperatura por até 12 horas.",
+      "categoria": "Acessórios",
+      "preco": 50
+    }
+  }
+}

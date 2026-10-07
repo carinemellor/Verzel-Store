@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/rota-inexistente"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:58 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2F%2Bvahb3SN14WsI2Ly1Ck4OPRG9jwyO2XwDVcQqgi65C%2FPpK18nRtKFBSoZgOaXthKtUIWVnRAvyQBPT46jfMMSfTgtR3QkWqV%2BLYFzQz4%2FDjtU8L6CAf9ZVkbLLSjroXvMA%2BsyOCQ3hVkwrRWRHDCXYdWh9BgOSmo08Tm1DJcIJD%2F0nFO7Jc2%2BrEf7Q%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf7ba47068a-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "ROTA_NAO_ENCONTRADA",
+        "mensagem": "Rota não encontrada."
+      }
+    }
+  }
+}

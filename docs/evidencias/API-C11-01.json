@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "itens": [
+        {
+          "produtoId": "P001",
+          "quantidade": 1
+        },
+        {
+          "produtoId": "P006",
+          "quantidade": 1
+        }
+      ],
+      "cupom": "BEMVINDO10"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:54 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FWhisQ2LcFgvze7SXXdsw7PY4iYmhjbm%2F9BDyB%2FoShc4qTzZavlKOdUC8G6ngXDdyeFFz6cyZNLKyfRvL8LyME7LGuCC%2BZpr5i8rnBbR2YTImtI5hjSpQaPrjmLsn1TMzRJur8lZkGqplv5jmOUmywHOsL6e2IIwMC80PI0EWaIfHO0HHdxWIsQ3l3c%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680ce3082203da-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "itens": [
+        {
+          "produtoId": "P001",
+          "nome": "Camiseta Essencial",
+          "precoUnitario": 59.9,
+          "quantidade": 1,
+          "total": 59.9
+        },
+        {
+          "produtoId": "P006",
+          "nome": "Kit 3 Pares de Meias",
+          "precoUnitario": 29.9,
+          "quantidade": 1,
+          "total": 29.9
+        }
+      ],
+      "subtotal": 89.8,
+      "desconto": 8.98,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 110.2,
+      "total": 100.72,
+      "cupom": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      }
+    }
+  }
+}

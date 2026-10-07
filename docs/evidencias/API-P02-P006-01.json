@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P006"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=SbDAORmsuG21YqWcoI0%2BJ0e2viXpiSXQqljK3KQQZPW4%2FrCedLJQuk0YRX0bG%2FhW%2FDp81B%2BboKYDw9JYLuzmqqN7h1JupznusW7AJa%2B3XyNxHYSBdqoUJ1MdCqVumzHPPILjsR2f8KfCfJpZk3oc5kKTofMDcAtNMiqTR3FAAeaYcPQzpdJuYGk9th0%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf4e935f250-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P006",
+      "nome": "Kit 3 Pares de Meias",
+      "descricao": "Cano médio, algodão com reforço no calcanhar.",
+      "categoria": "Vestuário",
+      "preco": 29.9
+    }
+  }
+}

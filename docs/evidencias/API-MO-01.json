@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/pedidos"
+  },
+  "response": {
+    "status": 405,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:20:02 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "99",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RJEEegRQasO1Iprrqpv2SibliiUshLhqQW3ej9nBHl3Uebf%2BfcZkpHMaguxrj8HueG6Ev8xWp1F%2BS0n%2FqM2nxAWYY7ubqdc%2BYIqA%2FJFrRYi3HpVg2HTc8mPYL8zxJz%2FhcG9DmXALDaAqJkFzwFmipCX%2Fw4xNVC9LEJHM4V07DUULxF9WbO9eWrD4JLA%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680d11c8c6f1dd-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "METODO_NAO_PERMITIDO",
+        "mensagem": "O método GET não é permitido nesta rota."
+      }
+    }
+  }
+}

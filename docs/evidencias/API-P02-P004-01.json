@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P004"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CSLz%2FpVyOeWBS7r%2BrHxZGoF0LQtogeMlTbulVd%2BA3NDwrtRezVYIIlBs3jbWGsFXQlXgFdHg0FZZoXuufELIUa4UlWu4Npa5HcJiN3zRZe1NsbWwUO016Xcq7JU2U2CUpuuvPcupQEyszwLzfrJscU2KRB5tseidZmuUG29%2BtyrHTQ0rLhP%2Fn6rGo18%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf39b7f886a-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P004",
+      "nome": "Boné Aba Curva",
+      "descricao": "Ajuste traseiro com fivela metálica.",
+      "categoria": "Acessórios",
+      "preco": 49.9
+    }
+  }
+}

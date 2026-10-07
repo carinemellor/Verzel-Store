@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example..com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:50:46 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "364",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=66PjcfHoHoK7n3F%2FituNBoJLd6zbImn7zsZk0PsbJSc%2FZiIL%2FckyKDgjFzIqEUsuhWx339YMH0J%2F421SdNCrHLIpAEEhwYBWGqRHPQozpFD9%2Fou2Jp%2Fysaom68HDlSlWIdg7uQIiKEZuuPp%2BJHM%2BW03gUxzk52zyls5LwgbLl6WA9kHfWE5JD8Kc0%2B8%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4683a156a0e1a9e-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": "{\"numero\":\"VZ-603338\",\"criadoEm\":\"2026-10-06T22:50:46.005Z\",\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@example..com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":100,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":119.9,\"cupom\":null}"
+  }
+}

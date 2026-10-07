@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P003"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XuQUZnvlDgHJ%2BLWLaw0FZ1dSZbwklgrdO5t%2BceZWw%2BbmKjuAuFdg6uBQd79KU0MVPu8ZO9YOun%2F3S5F7crVUtVFrVh6B30vF%2BCMCXKJ%2BN2TXUPALgEdKSqFt4FD5MCuSZScXuHmUc5RWdLvOT7PnEUgRuzlZwYF0%2BNQv0%2BJINpEXe05gaWH89qFFKhM%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf2ef0001be-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P003",
+      "nome": "Tênis Casual Urbano",
+      "descricao": "Solado de borracha e cabedal em lona.",
+      "categoria": "Calçados",
+      "preco": 189.9
+    }
+  }
+}

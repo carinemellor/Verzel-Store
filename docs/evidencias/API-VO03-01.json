@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/pedidos",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        null
+      ]
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:20:00 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "124",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tFK3Y5FbHNQd56k6mPAINLUlI8G0VZpGIQF2h1sw9xJkNBRWxQcoKT02vrD1K9wnp03gFyJoIEeBO3zEUaYX5mc5xyK96OIHoG1QxRq3BsKNAfwk1rW8MHXiOfynFhChvX6YCBcqVzccYmogEoHRAqIQzKY7zck6k46RVYdPb2hh5RVH9MrKk83ORGU%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680d06cd997a84-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "ITEM_INVALIDO",
+        "mensagem": "Cada item deve ser um objeto com produtoId e quantidade.",
+        "campo": "itens[0]"
+      }
+    }
+  }
+}

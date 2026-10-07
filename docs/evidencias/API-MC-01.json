@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/carrinho/calcular"
+  },
+  "response": {
+    "status": 405,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:20:00 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "99",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uGg%2FJgiBBCZK4lY%2FSotYvCaXzcQH6gw%2FhYFZIfGmvsGAmOET1imx5reyAZFwPosx2kMQfHSyyGLvfex5qzkpH6qZAtHqmwb2R%2Bpt5sLPd0qR4tEUeM4F9aBurS%2BnfHYy1iGGeyfky5OfbGhERS%2BYEluYSv9h9MLwnc%2FlCO2jEjmH%2BFoJZdhvK8ambJ0%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680d04ac324fa6-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "METODO_NAO_PERMITIDO",
+        "mensagem": "O método GET não é permitido nesta rota."
+      }
+    }
+  }
+}

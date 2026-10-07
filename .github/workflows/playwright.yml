@@ -1,0 +1,47 @@
+name: Playwright - interface e API
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: playwright-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    timeout-minutes: 15
+    runs-on: ubuntu-24.04
+    env:
+      CI: true
+      BASE_URL: ${{ vars.BASE_URL || 'https://verzel-store.qa-test-verzel-store.workers.dev' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Instalar dependências
+        run: npm ci
+      - name: Validar TypeScript
+        run: npm run typecheck
+      - name: Instalar Chromium e dependências do sistema
+        run: npx playwright install --with-deps chromium
+      - name: Executar interface e API
+        run: npm test
+      - name: Preservar relatório e evidências
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: playwright-results-${{ github.run_number }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14

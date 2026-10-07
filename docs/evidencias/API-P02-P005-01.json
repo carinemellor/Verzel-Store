@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P005"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tZWxlotYQHdD3mtrZmKw7ns8C8R2aaEotbuqpZGr33tmwbBnD5hMBebN6W6b0hdxQbhjLOOvAyLwBGReyLRHyFf%2Bn1SVVx%2BPIhCCXV1jtVtu6khZk2ZNE4Pf9K5SOP%2Bvb9NtL2qmD01hu%2Bkiq9IbmSAOzsB%2BTX3Wi3mPAq2a62ZWIm4LJkxDfIgnpRk%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf42f05b816-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P005",
+      "nome": "Mochila Urbana 20L",
+      "descricao": "Compartimento acolchoado para notebook.",
+      "categoria": "Acessórios",
+      "preco": 100
+    }
+  }
+}

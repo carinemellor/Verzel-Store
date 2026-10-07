@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "itens": [
+        {
+          "produtoId": "P007",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:54 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Oq6EoC6S%2F2H1TcmtWaY1yQpuRjaXuZbrcJIYYaU8h5YdANXYvfyDyWWfIiopXzZt7%2FaNE%2Fw5HLj0SoBarscKfTiwcauL%2FCQCkek2gG%2FVwZ504bWE3bn80JgJFVZOXeVC59fblF%2BXev4U1NLiOXAXm1G9F1lCRdxy17P36RA7Iyq98dr90NWWL0qrtW0%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680ce0ec4c4979-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "itens": [
+        {
+          "produtoId": "P007",
+          "nome": "Jaqueta Corta-Vento",
+          "precoUnitario": 229.9,
+          "quantidade": 1,
+          "total": 229.9
+        }
+      ],
+      "subtotal": 229.9,
+      "desconto": 0,
+      "frete": 0,
+      "freteGratis": true,
+      "valorFaltanteFreteGratis": 0,
+      "total": 229.9,
+      "cupom": null
+    }
+  }
+}

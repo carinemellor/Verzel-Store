@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@example.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1.5
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:59 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "145",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=S0tJMVO%2BSUjrGsB48qy30SabKzLApjzwuqUJb%2BvLlAbrOmeTvOounQjY4ZB5pDzpN6%2B%2FScMsgnrtdMuFhTzc6QLWrO86GYTqiNbUsoeNQh9nIcsOSiXp4Rl9tPubnDmeO6SVDECM%2Fo4nWCvNhNuAITG5LyB3zIeileSg%2F7J5WUIEqFS5Oxbij53rdtA%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cfdbe69098b-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "QUANTIDADE_INVALIDA",
+        "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+        "campo": "itens[0].quantidade"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/P002"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bltGngU6hLPUwXZM%2B7Eee9Se2rZlpeHE8HQVykRL3fSH%2FV9s6Xh8F1yKtwkyfAfQupyYPk1ibP22uk0L6swWahVp0A3wsy59WMRMaDotCHAqbZZKWgLeuO%2Bag4ISFyxdHpDQPoSGMNuhnma3rbViutOtn6uXA3z4KwXBhfGHL%2BuHRCK5N0l4tYC840w%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf23cc93002-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "id": "P002",
+      "nome": "Calça Jeans Slim",
+      "descricao": "Jeans com elastano e lavagem escura.",
+      "categoria": "Vestuário",
+      "preco": 139.9
+    }
+  }
+}

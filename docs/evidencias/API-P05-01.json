@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/produtos",
+    "data": {}
+  },
+  "response": {
+    "status": 405,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:58 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "100",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0bT7xsqvDxm3woBLxqEiDYwXSehpm8k4kYvkMXuK%2FL59JVP%2FWT4fyPYAD7JMwtuNI%2FP0PK3H1srKpD76OSEjjfmy5eqwCfSabcJV4CQE%2Fn0C4qa%2BvhYgX9LPSEqBW%2FIlNGw1zgcPk66ZP1l3FJqfB748D%2FACokizoDKWe91w89FeGeTeUSyCV3YLAJg%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf86ee0f1ab-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "METODO_NAO_PERMITIDO",
+        "mensagem": "O método POST não é permitido nesta rota."
+      }
+    }
+  }
+}

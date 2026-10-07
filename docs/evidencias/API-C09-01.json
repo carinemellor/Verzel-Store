@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/carrinho/calcular",
+    "data": {
+      "itens": [
+        {
+          "produtoId": "P002",
+          "quantidade": 1
+        },
+        {
+          "produtoId": "P004",
+          "quantidade": 2
+        }
+      ],
+      "cupom": "BEMVINDO10"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:54 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=A6kXVqPoHwyPechfp5MEYTGmjtT0eXcOk2rPTqqTE%2Bm7hKuoB9l8dPSh6J8zuZY8PmN5VdAppSaTIVDBc0luUpaC3O5GjW6NW4R50EY63BNMeJDpFFuIEWkg%2Baz5jIfmlGKrynUoLrGajecYPkBbTWOuQtNPADc5fk9IGteWvX6Z%2BxOcxb7Ux%2BDzq3g%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680ce19c781cec-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "itens": [
+        {
+          "produtoId": "P002",
+          "nome": "Calça Jeans Slim",
+          "precoUnitario": 139.9,
+          "quantidade": 1,
+          "total": 139.9
+        },
+        {
+          "produtoId": "P004",
+          "nome": "Boné Aba Curva",
+          "precoUnitario": 49.9,
+          "quantidade": 2,
+          "total": 99.8
+        }
+      ],
+      "subtotal": 239.7,
+      "desconto": 23.97,
+      "frete": 0,
+      "freteGratis": true,
+      "valorFaltanteFreteGratis": 0,
+      "total": 215.73,
+      "cupom": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      }
+    }
+  }
+}

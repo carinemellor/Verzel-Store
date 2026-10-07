@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/produtos/INEXISTENTE"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "date": "Tue, 06 Oct 2026 22:19:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UFINUuooEJZCzcAKmFEc7Arxh5t9uhf1r%2FI2ucEXeNtA2P8DJxqC6BcowFs1T9jxyB1KAaFybNXD5Kp454vQ2ZSuUntHZkizjZoi6nt%2Fz13csjIHmdEy94bN%2BOuZKICaJGezXY%2FHI26udMWBe89sqnpLa8OJa40nmyzF8KKWiXsM1k3AEJAQH1BmZnk%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "br",
+      "server": "cloudflare",
+      "cf-ray": "a4680cf70af9f1f6-GRU",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": {
+      "erro": {
+        "codigo": "PRODUTO_NAO_ENCONTRADO",
+        "mensagem": "Produto INEXISTENTE não encontrado."
+      }
+    }
+  }
+}
